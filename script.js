@@ -1,19 +1,152 @@
-const numberOfFilms = +prompt("сколько фильмов вы уже поссмотрели?", "");
+// const numberOfFilms = +prompt("сколько фильмов вы уже поссмотрели?", "");
 
-const PersonalMovieDb = {
-	conut: numberOfFilms,
-	movies: {},
-	actors: {},
-	geners: [],
-	privat: false
-};
+// const PersonalMovieDb = {
+// 	conut: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	geners: [],
+// 	privat: false
+// };
 
-const a = prompt("один из просмотренных последних фильмов?", ""),
-	b = prompt("на сколько оцените его?", ""),
-	c = prompt("один из просмотренных последних фильмов?", ""),
-	d = prompt("на сколько оцените его?", "");
+// const a = prompt("один из просмотренных последних фильмов?", ""),
+// 	b = prompt("на сколько оцените его?", ""),
+// 	c = prompt("один из просмотренных последних фильмов?", ""),
+// 	d = prompt("на сколько оцените его?", "");
 
-PersonalMovieDb.movies[a] = b;
-PersonalMovieDb.movies[c] = d;
+// PersonalMovieDb.movies[a] = b;
+// PersonalMovieDb.movies[c] = d;
 
-console.log(PersonalMovieDb);
+// console.log(PersonalMovieDb);
+
+
+/* просто условие if задает что нужно проверить else выводит чтото если условие не верно */
+// if (4 == 9) {
+// 	console.log('Ok!')
+// } else {
+// 	console.log('error')
+// }
+
+
+/*разветвление условий*/
+
+// const num = 50;
+
+// if (num < 49) {
+// 	console.log('error')
+// } else if (num > 49) { а єлсе выводим еще один иф
+// 	console.log("верно")
+// };
+
+const num = 51;
+(num == 50) ? console.log("верно") : console.log("error");
+/* Тернарный оператор в его работае 3 аргумента
+оператор ? после двоеточия выводим если условие не сработало */
+
+/* switch яіляется множественными проверками но эти проверки могут быть только строгие нету больше или меньше 
+только равно или нет 
+в скобках вводим что проверяем 
+сase "с чем проверяем наш switch и после: выводим чтото если условие верно заканнчивам break перед следуующим
+условием 
+defaul заканчивает проверки и выводит чтото в консоль" */
+switch (num) {
+	case 49:
+		console.log('неверно');
+		break
+	case 50:
+		console.log("verno");
+		break
+	default:
+		console.log("ничего не подошло");
+		break
+}
+
+let first = 50;
+
+// while (first <= 55) {
+// 	console.log(first);
+// 	first++;
+// }
+
+// do {
+// 	console.log(first);
+// 	first++;
+// }
+// while (first <= 55);
+
+
+/* for (переменная инкремент; при каком условии цикл заканчивается; что происходит каждый круг цикла)*/
+// {
+// 	for (let i = 1; i <= 10; i++) {
+// 		if (i == 6) {
+// 			// break;
+// 			// continue;
+// 		}
+// 		console.log(i);
+// 	}
+// };
+
+// При помощи цикла for вывести числа от 20 до 10 в консоль. В обратном порядке (20, 19, 18...). Когда цикл дойдет до числа 13 - остановить весь цикл
+
+
+// for (let i = 20; i >= 10; i--) {
+// 	if (i < 13) {
+// 		break;
+// 	}
+// 	console.log(i);
+// }
+// При помощи цикла for выведите чётные числа от 2 до 10 включительно
+
+// for (let i = 2; i <= 10; i +=) {
+// 	console.log(i);
+// }
+
+
+
+
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+// while (first <= 55) {
+// 	console.log(first);
+// 	first++;
+// }
+
+// let i = 2;
+
+// while (i <= 16) {
+// 	i++;
+// 	if (i % 2 === 0) {
+// 		continue;
+// 	} else {
+// 		console.log(i);
+// 	};
+// }
+
+
+
+for (const arrayOfNumbers = []; )
+
+
+
+
+
+
+	/* !!!!!!!!!!!!!!!!!!!!!!! ОПЕРАТОРЫ !!!!!!!!!!!!!!!!!!!!*/
+
+	//https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table
+
+	let incr = 10,
+		decr = 10;
+
+incrr++; // инкермент увеличивает на единицу 
+decr--; // дикремент уменьшает на еденицу 
+//* когда ставим знак инкремента/дикремента перед значение это префиксный когда после то это постфиксный когда используем в постфиксной форме может показать сначало старое значение а после выводы в консоль изменить значение */
+
+//* оператор % делит 1 значение на втрое столько раз сколько возможно и віводит остаток например 5 % 2 = 1
+
+//* оператор и и или оператор и && и оператор или 	|| 
